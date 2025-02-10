@@ -186,15 +186,17 @@ header a{
         width: 100%;
     }
     #menu-appbar ul{
+        width: 100vw !important;
         height: 100vh;
+        overflow-y:hidden;
     }
     #menu-appbar ul li{
+        width: 93%;
         padding: 0px;
     }
     #menu-appbar ul li a.active{
         background-color: black;
         color: white;
-        width: 100%;
         padding: 10px 0px;
         margin: 0px;
     }

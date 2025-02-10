@@ -13,6 +13,7 @@ import templeTour from '../../assets/temple-tour.jpg';
 import scenery from '../../assets/river-scenery.jpg';
 import nightTour from '../../assets/night-tour.jpg';
 import culinaryHeritage from '../../assets/culinary-heritage.jpg';
+import intro from '../../assets/intro.jpg';
 import Gallery from "./Gallery";
 import GalleryCarousel from "../GalleryCarousel";
 import FormTukTuk from "../FormTukTuk";
@@ -101,7 +102,7 @@ const Home = () => {
                             </NavLink>
                         </div>
                         <div className="col-12 col-md-6">
-                            <img src="src\assets\intro.jpg" className="intro-image" alt="" />
+                            <img src={intro} className="intro-image" alt="" />
                         </div>
                     </div>
                 </div>
