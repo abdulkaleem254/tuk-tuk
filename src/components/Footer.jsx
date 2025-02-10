@@ -1,5 +1,5 @@
 import * as React from 'react';
-import "./Footer.css"
+import "./footer.css"
 import ElectricRickshawIcon from '@mui/icons-material/ElectricRickshaw';
 import { Box, Container, Typography, IconButton, Grid2 } from '@mui/material';
 import InstagramIcon from '@mui/icons-material/Instagram';
