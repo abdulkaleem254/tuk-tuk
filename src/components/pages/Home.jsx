@@ -22,22 +22,22 @@ const Home = () => {
     const [services, setServices] = useState([
         {
             title: "City Tours",
-            description: "Explore the vibrant streets of Phnom Penh, Siem Reap, and other major cities. Our city tours offer a unique perspective on urban life, historical landmarks, and cultural hotspots.",
-            highlights: ["Royal Palace", "National Museum", "local markets"],
+            description: "Explore the vibrant streets of Siem Reap, and other major cities. Our city tours offer a unique perspective on urban life, historical landmarks, and cultural hotspots.",
+            highlights: ["Angkor National Museum,", " National Museum and ", "local markets"],
             duration: "Half-day or full-day",
             image: cityTour
         },
         {
             title: "Countryside Excursions",
             description: "Escape the hustle and bustle of the city and enjoy the serene beauty of Cambodia’s countryside. Visit traditional villages, lush rice paddies, and scenic landscapes.",
-            highlights: ["Village visits", "local crafts", "picturesque views"],
+            highlights: ["Village visits, ", "local crafts and ", "picturesque views"],
             duration: "Full-day trips available",
             image: countrySide
         },
         {
             title: "Temple Tours",
             description: "Discover the ancient wonders of Cambodia with our temple tours. Visit the iconic Angkor Wat, Bayon Temple, Ta Prohm, and other historical sites.",
-            highlights: ["Intricate carvings", "grand architecture", "overgrown ruins"],
+            highlights: ["Intricate carvings, ", "grand architecture and ", "overgrown ruins"],
             duration: "Full-day or multi-day",
             image: templeTour
         },
@@ -51,14 +51,14 @@ const Home = () => {
         {
             title: "Night Tours",
             description: "Experience the magic of Cambodia after dark. Our night tours take you to the best spots for nightlife, dining, and entertainment.",
-            highlights: ["Night markets", "local eateries", "cultural performances"],
+            highlights: ["Night markets, ", "local eateries and ", "cultural performances "],
             duration: "Evening tours available",
             image: nightTour
         },
         {
             title: "Culinary Tours",
             description: "Explore Cambodian cuisine through local markets, street food stalls, and renowned restaurants. Learn about the country's heritage.",
-            highlights: ["Cooking classes", "food tastings", "market visits"],
+            highlights: ["Cooking classes, ", "food tastings and ", "market visits"],
             duration: "Half-day or full-day",
             image: culinaryHeritage
         }
@@ -93,7 +93,7 @@ const Home = () => {
                                 Welcome to the Cambodia Tuk-Tuk Adventure
                             </h2>
                             <p className="about-description">
-                                Welcome to the Cambodia Tuk-Tuk Adventure! Embark on a thrilling 900km journey through Cambodia in an iconic Indian-made Tuk-Tuk. Experience the vibrant streets of Phnom Penh, the serene countryside, and quaint villages. Feel the warm breeze and immerse yourself in the rich tapestry of Cambodian life. This adventure is perfect for thrill-seekers and those looking to connect deeply with the culture and people of Cambodia.                        </p>
+                                Welcome to the Cambodia Tuk-Tuk Adventure! Embark on a thrilling 900km journey through Cambodia in an iconic Tuk-Tuk. Experience the vibrant streets of Siem Reap, the serene countryside, and quaint villages. Feel the warm breeze and immerse yourself in the rich tapestry of Cambodian life. This adventure is perfect for thrill-seekers and those looking to connect deeply with the culture and people of Cambodia.                        </p>
                             <p>Don't miss out on this unforgettable journey. Sign up now and create memories that will last a lifetime.</p>
                             <NavLink to='/about'>
                                 <Button variant="outlined" className="mt-2" size="medium">

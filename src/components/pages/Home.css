@@ -230,6 +230,11 @@ header a{
     .intro button {
         margin-bottom: 10px !important;
     }
+    .card-box>div {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
 
     .iframe-box {
         height: 300px;

@@ -1,0 +1,103 @@
+.about-banner {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('../../assets/intro.jpg') center/cover no-repeat;
+    background-size: cover;
+    color: white;
+    /* padding: 100px 0; */
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.about-intro img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.description>p{
+    font-size: 17px;
+    /* line-height: 1.6; */
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial {
+    text-align: center;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.about-footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.choose-banner{
+
+    background-color: #F9F9F9;
+}
+.why-choose-us-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.why-choose-us-list li {
+    padding:30px 30px;
+    font-size: 1.2em;
+    margin: 10px 0;
+    width: 30%;
+    background-color: #212529;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.why-choose-us-list li:hover {
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+.why-choose-us-list li span{
+    display: block;
+    margin: 10px 0px;
+    
+}
+.why-choose-us-list li span svg{
+    font-size: 40px;
+}
+@media screen and (max-width: 991px) {
+    .why-choose-us-list{
+        gap: 10px;
+    }
+    .why-choose-us-list li {
+        width: 100%;
+    }
+    .choose-banner{
+        padding: 20px !important;
+    }
+}

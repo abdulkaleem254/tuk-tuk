@@ -16,30 +16,35 @@ function App() {
   const router = createBrowserRouter([
     {
       path: '/',
-      element:<Applayout/>,
-        children:[{
-            path:'/home',
-            element:<Home/>
+      element: <Applayout />,
+      children: [
+        {
+          path: '/',
+          element: <Home />
         },
         {
-          path:'/about',
-          element:<About/>
+          path: '/home',
+          element: <Home />
         },
         {
-          path:'/services',
-          element:<Services/>
+          path: '/about',
+          element: <About />
         },
         {
-          path:'/gallery',
-          element:<Gallery/>
+          path: '/services',
+          element: <Services />
         },
         {
-          path:'/contact',
-          element:<Contact/>
+          path: '/gallery',
+          element: <Gallery />
+        },
+        {
+          path: '/contact',
+          element: <Contact />
         }
       ]
     }
-])
+  ])
 
   return (
     <>
