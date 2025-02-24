@@ -34,7 +34,7 @@ const Footer = () => {
                             <Grid2 item xs={12} md={3}>
                                 <Typography variant="h6">Contact Us</Typography>
                                 <Box sx={{ marginTop: '10px' }}>
-                                    <Typography variant="body2">123 Tuk Tuk Street, Phnom Penh, Cambodia</Typography>
+                                    <Typography variant="body2">Siem Reaph, Cambodia</Typography>
                                     <Typography variant="body2">Email: mrpheak11@gmail.com</Typography>
                                     <Typography variant="body2">Phone: +85598812335</Typography>
                                 </Box>

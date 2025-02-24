@@ -80,39 +80,56 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="container">
+            <div className="container-fluid">
                 <div className="row my-5">
-                    <div className="col-12">
-                        <h2 className="text-center">Customer Experiences</h2>
-                        <div className="testimonial">
-                            <blockquote>"Tuk Tuk is amazing! Pheak made our trip to Cambodia unforgettable."</blockquote>
-                            <p>- Happy Customer</p>
-                        </div>
-                        <div className="testimonial">
-                            <blockquote>"The best tour experience we've ever had! Highly recommend!"</blockquote>
-                            <p>- Satisfied Traveler</p>
-                        </div>
-                    </div>
                 </div>
                 <div className="row my-5">
                     <div className="col-12">
                         <h2 className="text-center">Customer Testimonials</h2>
-                        <div className="row">
-                            <div className="col-12 col-md-6 my-3">
-                                <div className="testimonial">
-                                    <img src={testimonial1} alt="Customer 1" className="img-fluid rounded-circle" />
-                                    <blockquote>"Tuk Tuk is amazing! Pheak and his team made our trip to Cambodia unforgettable."</blockquote>
-                                    <p>- Happy Customer</p>
+                        <div className="row testimonials">
+                            <div className="col-12 col-md-12 my-3">
+                                <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+                                    <div className="feedback carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" className='bg-dark' aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" className='bg-dark' aria-label="Slide 3"></button>
+                                    </div>
+                                    <div className="carousel-inner">
+                                        <div className="carousel-item active">
+                                            <div className="testimonial">
+                                                <img src={testimonial1} alt="Customer 1" className="img-fluid rounded-circle" />
+                                                <blockquote>"Tuk Tuk is amazing! Pheak and his team made our trip to Cambodia unforgettable."</blockquote>
+                                                <p>- Happy Customer</p>
+                                            </div>
+                                        </div>
+                                        <div className="carousel-item">
+                                            <div className="testimonial">
+                                                <img src={testimonial1} alt="Customer 1" className="img-fluid rounded-circle" />
+                                                <blockquote>"Tuk Tuk is amazing! Pheak and his team made our trip to Cambodia unforgettable."</blockquote>
+                                                <p>- Happy Customer</p>
+                                            </div>
+                                        </div>
+                                        <div className="carousel-item">
+                                            <div className="testimonial">
+                                                <img src={testimonial1} alt="Customer 1" className="img-fluid rounded-circle" />
+                                                <blockquote>"Tuk Tuk is amazing! Pheak and his team made our trip to Cambodia unforgettable."</blockquote>
+                                                <p>- Happy Customer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                        <span className="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                                        <span className="visually-hidden">Previous</span>
+                                    </button>
+                                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                        <span className="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                                        <span className="visually-hidden">Next</span>
+                                    </button>
                                 </div>
                             </div>
-                            <div className="col-12 col-md-6 my-3">
-                                <div className="testimonial">
-                                    <img src={testimonial2} alt="Customer 2" className="img-fluid rounded-circle" />
-                                    <blockquote>"The best tour experience we've ever had! Highly recommend!"</blockquote>
-                                    <p>- Satisfied Traveler</p>
-                                </div>
-                            </div>
+
                         </div>
+
                     </div>
                 </div>
             </div>
