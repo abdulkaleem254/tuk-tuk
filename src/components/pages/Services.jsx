@@ -36,7 +36,7 @@ const Services = () => {
                 <h3 className='text-center my-3'>Explore our services below and discover why our customers leave with a smile!</h3>
                 <div className="row">
                     {services.map((service, index) => (
-                        <ServiceCard service={service} key={`service${index}`} />
+                        <ServiceCard service={service} index={index} key={`${index}`} />
                     ))}
                 </div>
                 <div className="row mt-3 mb-5 d-flex justify-content-end booking">

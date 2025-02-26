@@ -1,4 +1,4 @@
-const ServiceCard = ({ service }) => {
+const ServiceCard = ({ service,index }) => {
     return (
         <div className="col-12 col-md-3 my-2" key={index}>
             <div className="card">
