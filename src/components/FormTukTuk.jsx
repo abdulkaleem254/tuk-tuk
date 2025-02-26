@@ -64,6 +64,5 @@ return (
         </div>
     </section>
 );
-};
 
 export default FormTukTuk;
