@@ -19,7 +19,7 @@ const FormTukTuk = () => {
                 alert('Form submission failed.');
             });
     }
-}
+
 
 return (
     <section id="contact" className="contact-section my-5">
@@ -64,5 +64,5 @@ return (
         </div>
     </section>
 );
-
+}
 export default FormTukTuk;
