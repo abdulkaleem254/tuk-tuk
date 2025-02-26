@@ -14,6 +14,9 @@ const Contact = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         alert(`Service: ${selectedService}\nName: ${event.target.name.value}\nEmail: ${event.target.email.value}\nMessage: ${event.target.message.value}`);
+        const whatsappMessage = `Name: ${event.target.name.value}\nEmail: ${event.target.email.value} \nMessage: ${event.target.message.value} `;
+        const whatsappURL = `https://api.whatsapp.com/send?phone=+918106268423&text=${encodeURIComponent(whatsappMessage)}`;
+        window.open(whatsappURL, '_blank');
     };
 
     const selectedServiceDetails = services.find(service => service.title === selectedService);
