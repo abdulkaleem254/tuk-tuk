@@ -192,7 +192,8 @@ header a{
         overflow-y:hidden;
     }
     #menu-appbar ul li{
-        width: 93%;
+        width: 90%;
+        margin: 0 auto;
         padding: 0px;
     }
     #menu-appbar ul li a.active{
