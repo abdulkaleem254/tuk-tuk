@@ -4,9 +4,10 @@ import './Services.css';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { NavLink } from 'react-router-dom';
 import { contextServices } from '../contextServices';
+import ServiceCard from '../ServiceCard';
 const Services = () => {
-    const {services} = useContext(contextServices);
-    
+    const { services } = useContext(contextServices);
+
 
     return (
         <>
@@ -35,34 +36,12 @@ const Services = () => {
                 <h3 className='text-center my-3'>Explore our services below and discover why our customers leave with a smile!</h3>
                 <div className="row">
                     {services.map((service, index) => (
-                        <div className="col-12 col-md-3 my-2" key={index}>
-                            <div className="card">
-                                <div className="card-front" style={{ backgroundImage: `url(${service.image})` }}>
-                                    <div className="overlay">
-                                        <div>
-                                            <h2>{service.title}</h2>
-                                            <p><b>Price :</b>{service.price}</p>
-                                        </div>
-                                    </div>
-                                    <div className="card-info">
-                                        <h6>{service.title}</h6>
-                                        <p><b>Price </b>: {service.price}</p>
-                                        {service.perks.length > 0 && <ul>
-                                            <b>Perks </b>:
-                                            {service.perks.map((perk, i) => (
-                                                <li key={i}><i className="fas fa-check-circle"></i> {perk}</li>
-                                            ))}
-                                        </ul>}
-                                        <p><b>Location </b> : {service.location}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <ServiceCard service={service} key={`${service_index}`} />
                     ))}
                 </div>
                 <div className="row mt-3 mb-5 d-flex justify-content-end booking">
                     <div className="col-12 text-end">
-                        <NavLink to={'/contact'} className="btn btn-dark"><ArrowRightAltIcon/>Book Now</NavLink>
+                        <NavLink to={'/contact'} className="btn btn-dark"><ArrowRightAltIcon />Book Now</NavLink>
                     </div>
                 </div>
             </div>
