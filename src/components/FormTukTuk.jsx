@@ -1,4 +1,22 @@
 const FormTukTuk = () => {
+    function submitForm(event) {
+        event.preventDefault();
+        const form = event.target;
+        const formData = new FormData(form);
+
+        fetch('/', {
+            method: 'POST',
+            body: formData,
+        })
+            .then(() => {
+                form.reset();
+                alert('Form submitted successfully!');
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert('Form submission failed.');
+            });
+    }
     return (
         <section id="contact" className="contact-section my-5">
             <div className="container">
@@ -12,46 +30,28 @@ const FormTukTuk = () => {
                             allowFullScreen=""
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
-                        ></iframe>                        
+                        ></iframe>
                     </div>
                     <div className="col-12 col-md-6">
                         <div className="get-in-touch-form">
                             <h2>Contact Us</h2>
-                            <form name="contact" method="POST" data-netlify="true">
+                            <form name="contact" method="POST" data-netlify="true" onSubmit="submitForm(event)">
+                                <input type="hidden" name="form-name" value="contact" />
                                 <div className="form-group">
                                     <label htmlFor="name">Name</label>
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        name="name"
-                                        required
-                                    />
+                                    <input type="text" id="name" name="name" required />
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="email">Email</label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        required
-                                    />
+                                    <input type="email" id="email" name="email" required />
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="phone">Phone</label>
-                                    <input
-                                        type="tel"
-                                        id="phone"
-                                        name="phone"
-                                        required
-                                    />
+                                    <input type="tel" id="phone" name="phone" required />
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="message">Message</label>
-                                    <textarea
-                                        id="message"
-                                        name="message"
-                                        required
-                                    ></textarea>
+                                    <textarea id="message" name="message" required></textarea>
                                 </div>
                                 <button type="submit">Submit</button>
                             </form>
