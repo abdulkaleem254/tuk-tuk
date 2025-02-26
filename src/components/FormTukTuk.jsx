@@ -17,7 +17,7 @@ const FormTukTuk = () => {
                     <div className="col-12 col-md-6">
                         <div className="get-in-touch-form">
                             <h2>Contact Us</h2>
-                            <form>
+                            <form name="contact" method="POST" data-netlify="true">
                                 <div className="form-group">
                                     <label htmlFor="name">Name</label>
                                     <input
