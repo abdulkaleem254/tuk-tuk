@@ -44,7 +44,8 @@
 }
 
 .banner-buttons .brochure-btn {
-    background-color: #2196f3;
+    /* background-color: #25d366; */
+    background-color: #019f3b;
     color: white;
 }
 
@@ -53,7 +54,7 @@
 }
 
 .banner-buttons .brochure-btn:hover {
-    background-color: #1976d2;
+    background-color: #00752b;
 }
 
 /* about section */

@@ -1,16 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Home from './components/pages/Home'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import About from './components/pages/About'
-import Applayout from './components/layout/Applayout'
-import Contact from './components/pages/Contact'
-import Gallery from './components/pages/Gallery'
-import Services from './components/pages/Services'
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './components/pages/Home';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import About from './components/pages/About';
+import Applayout from './components/layout/Applayout';
+import Contact from './components/pages/Contact';
+import Gallery from './components/pages/Gallery';
+import Services from './components/pages/Services';
+import { ServiceProvider } from './components/contextServices';
 
 function App() {
   const router = createBrowserRouter([
@@ -44,13 +45,15 @@ function App() {
         }
       ]
     }
-  ])
+  ]);
 
   return (
-    <>
-      <RouterProvider router={router}></RouterProvider>
-    </>
-  )
+    <ServiceProvider>
+
+      <RouterProvider router={router} />
+    </ServiceProvider>
+
+  );
 }
 
-export default App
+export default App;

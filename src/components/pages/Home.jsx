@@ -17,6 +17,8 @@ import intro from '../../assets/intro.jpg';
 import Gallery from "./Gallery";
 import GalleryCarousel from "../GalleryCarousel";
 import FormTukTuk from "../FormTukTuk";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+
 
 const Home = () => {
     const [services, setServices] = useState([
@@ -64,6 +66,12 @@ const Home = () => {
         }
 
     ])
+    function openWhatsApp () {
+        const phoneNumber = "+85598812335"; 
+        let message = "Hello Pheak!, I'm interested in your services.";
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        // window.open(url, '_blank');
+    };
 
     const carouselItems = [nightTour, scenery, culinaryHeritage];
     return (
@@ -76,7 +84,7 @@ const Home = () => {
                             <p>Start your engines. We’re going to Cambodia.</p>
                             <div className="banner-buttons">
                                 <NavLink to={'/contact'}><button className="enquire-btn">ENQUIRE</button></NavLink>
-                                <button className="brochure-btn">DOWNLOAD OUR BROCHURE</button>
+                                <button className="brochure-btn" onClick={openWhatsApp()}><WhatsAppIcon /> WhatsApp</button>
                             </div>
                         </div>
                     </div>
