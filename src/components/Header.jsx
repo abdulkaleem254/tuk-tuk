@@ -15,7 +15,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import ElectricRickshawIcon from '@mui/icons-material/ElectricRickshaw';
 import { NavLink } from 'react-router-dom';
 import "./Header.css"
-const pages = ['Home', 'About', 'Services', 'Gallery', 'Contact'];
+const pages = ['home', 'about', 'services', 'gallery', 'contact'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Header() {
@@ -39,7 +39,7 @@ function Header() {
 
     return (
         <AppBar position="sticky" sx={{ backgroundColor: 'black' }}>
-            <Container maxWidth="xl">
+            <Container position="sticky" maxWidth="xl">
                 <Toolbar disableGutters>
                     <ElectricRickshawIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, }} />
                     <Typography
@@ -90,7 +90,7 @@ function Header() {
                             {pages.map((page) => (
                                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                                     <NavLink to={page}>
-                                        <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
+                                        <Typography sx={{ textAlign: 'center' }}>{page.toUpperCase()}</Typography>
                                     </NavLink>
                                 </MenuItem>
                             ))}

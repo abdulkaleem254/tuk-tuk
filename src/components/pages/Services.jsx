@@ -41,7 +41,7 @@ const Services = () => {
                 </div>
                 <div className="row mt-3 mb-5 d-flex justify-content-end booking">
                     <div className="col-12 text-end">
-                        <NavLink to={'/contact'} className="btn btn-dark"><ArrowRightAltIcon />Book Now</NavLink>
+                        <NavLink to={'/contact'} className="btn btn-dark">Book Now<ArrowRightAltIcon /></NavLink>
                     </div>
                 </div>
             </div>

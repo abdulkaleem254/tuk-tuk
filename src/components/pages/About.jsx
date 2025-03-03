@@ -21,6 +21,26 @@ const About = () => {
         redirect: "follow",
 
     };
+    const teamMembers = [
+        {
+            name: 'SOM',
+            title: 'TukTuk driver in Cambodia',
+            Experience:'12+ Years',
+            photo: teamMember1
+        },
+        {
+            name: 'Ran',
+            title: 'TukTuk driver in Cambodia',
+            Experience:'9+ Years',
+            photo: teamMember2
+        },
+        {
+            name: 'Mike Johnson',
+            title: 'CFO',
+            Experience:'9+ Years',
+            photo: teamMember2
+        }
+    ];
 
     fetch("https://v1.nocodeapi.com/shaikaleem/netlify/ArELmZsbynfmYJQM/sites", requestOptions)
         .then(response => response.json())
@@ -78,6 +98,25 @@ const About = () => {
                             <li><span><MapIcon /></span> Custom itineraries tailored to your preferences</li>
                         </ul>
                     </div>
+                </div>
+            </div>
+            {/* teaming section */}
+            <div className="container-fluid team-section">
+                <div className="container">
+                    <section className="">
+                        <h2>Our Team</h2>
+                        <div className="team-container">
+                            {teamMembers.map((member, index) => (
+                                <div key={index} className="team-member">
+                                    <img src={member.photo} alt={`${member.name}'s photo`} className="team-photo" />
+                                    <h3>{member.name}</h3>
+                                    <p>{member.title}</p>
+                                    <p><b>Exprience : </b>{member.Experience}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
+
                 </div>
             </div>
             <div className="container-fluid">
